@@ -30,7 +30,9 @@ class RegistrationViewController: UIViewController {
     
     @IBOutlet weak var btn: UIButton!
     
-    
+    func btnOk() {
+        btn.isEnabled = true
+    }
     
     override func viewDidLoad() {
         
@@ -64,8 +66,24 @@ class RegistrationViewController: UIViewController {
        
       
       if ArrayPerson.shared.array.count == 0 {
-          ArrayPerson.shared.array.append(namae)
+          if surname.text == "" || name.text == "" || fatherName.text == "" || login.text == "" || password.text == "" {
+              let allertController = UIAlertController(title: "Нельзя", message: "Заполните все поля", preferredStyle: .alert)
+                              let action = UIAlertAction(title: "Cancel", style: .cancel) { action in
+                              }
+                              allertController.addAction(action)
+                              self.present(allertController, animated: true, completion: nil)
+          } else {
+              ArrayPerson.shared.array.append(namae) }
       } else {
+          
+          
+          if surname.text == "" || name.text == "" || fatherName.text == "" || login.text == "" || password.text == "" {
+              let allertController = UIAlertController(title: "Нельзя", message: "Заполните все поля", preferredStyle: .alert)
+                              let action = UIAlertAction(title: "Cancel", style: .cancel) { action in
+                              }
+                              allertController.addAction(action)
+                              self.present(allertController, animated: true, completion: nil)
+          } else {
       
       
       for person in ArrayPerson.shared.array {
@@ -81,7 +99,7 @@ class RegistrationViewController: UIViewController {
           }
       
       }
-      }
+          }}
         
         
         
@@ -90,9 +108,13 @@ class RegistrationViewController: UIViewController {
                         }
                         allertController.addAction(action)
                         self.present(allertController, animated: true, completion: nil)
-        clear()
+                        
         
-    }
+                    
+        clear()
+   
     
 
+}
+    
 }

@@ -13,41 +13,76 @@ class EnterScreenViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var login: UITextField!
     var hello: String?
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let tabBarController = segue.destination as! UITabBarController
+        let viewControllers = tabBarController.viewControllers
+        
+        viewControllers! .forEach{
+            if let navVC = $0 as? UINavigationController {
+                let welcomeVC = navVC.topViewController as! WelcomeViewController
+                welcomeVC.hello = hello
+            } 
+        }
+    }
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         btnEnter.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
     
+    
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     @IBAction func btnEnterPress() {
-        for person in ArrayPerson.shared.array {
-            if person.login == login.text && person.password == password.text {
-                hello = "Здравствуйте, \(person.name) \(person.fatherName)!"
-            } else {let allertController = UIAlertController(title: "Нельзя", message: "Неверное имя или пароль!", preferredStyle: .alert)
+        
+         
+        
+        if login.text == "" || password.text == ""{
+            let allertController = UIAlertController(title: "Нельзя", message: "ПУСТОТА ПЛОХО", preferredStyle: .alert)
                 let action = UIAlertAction(title: "Cancel", style: .cancel) { action in
                 }
                 allertController.addAction(action)
-                self.present(allertController, animated: true, completion: nil)}
-        }
-
+                self.present(allertController, animated: true, completion: nil)
+            
         
+        }else {
+            if ArrayPerson.shared.array.count == 0 {
+                let allertController = UIAlertController(title: "Нельзя", message: "Юзер не найден", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "Cancel", style: .cancel) { action in
+                    }
+                    allertController.addAction(action)
+                    self.present(allertController, animated: true, completion: nil)
+            } else {
+            
+            
+            for person in ArrayPerson.shared.array {
+            if person.login == login.text && person.password == password.text   {
+                    hello = "Здравствуйте, \(person.name) \(person.fatherName)!"}
+                else {let allertController = UIAlertController(title: "Нельзя", message: "Неверное имя или пароль!", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "Cancel", style: .cancel) { action in
+                    }
+                    allertController.addAction(action)
+                    self.present(allertController, animated: true, completion: nil)}
+            
+        }
+            
+            
+        }
+        }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let welcomeVC = segue.destination as! WelcomeViewController
-        welcomeVC.hello = hello}
-    }
-    
+
+}
+  
     
 
