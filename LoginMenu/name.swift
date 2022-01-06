@@ -16,9 +16,14 @@ struct Person: Equatable{
     var fatherName: String
     var login: String
     var password: String
+    
+    
+    static func == (lhs: Person, rhs: Person) -> Bool {
+        lhs.login == rhs.login && lhs.password == rhs.password
+    }
 }
 
-struct ArrayPerson: Equatable  {
+class ArrayPerson  {
     static var shared = ArrayPerson()
     private init() {}
     

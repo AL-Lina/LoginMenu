@@ -1,26 +1,22 @@
 //
-//  MainViewController.swift
+//  CreditViewController.swift
 //  LoginMenu
 //
-//  Created by Bulat Serimbetov on 31.12.2021.
+//  Created by Bulat Serimbetov on 06.01.2022.
 //
 
 import UIKit
 
-class MainViewController: UIViewController {
+class CreditViewController: UIViewController {
 
-    @IBOutlet weak var registr: UIButton!
-    @IBOutlet weak var enter: UIButton!
+    @IBOutlet weak var creditSumLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        registr.layer.cornerRadius = 10
-        enter.layer.cornerRadius = 10
+
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
-        
-    }
+
     /*
     // MARK: - Navigation
 

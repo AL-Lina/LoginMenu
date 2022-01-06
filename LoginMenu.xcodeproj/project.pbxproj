@@ -10,14 +10,13 @@
 		D49915C9277F65F20022F62C /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49915C8277F65F20022F62C /* RegistrationViewController.swift */; };
 		D49915CB277F800B0022F62C /* EnterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49915CA277F800B0022F62C /* EnterScreenViewController.swift */; };
 		D49915CD277F83C10022F62C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49915CC277F83C10022F62C /* WelcomeViewController.swift */; };
+		D4D1C6DD27873AEC008725B5 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D1C6DC27873AEC008725B5 /* CreditViewController.swift */; };
 		D4FABD9B277EEB3400415E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FABD9A277EEB3400415E6B /* AppDelegate.swift */; };
 		D4FABD9D277EEB3400415E6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FABD9C277EEB3400415E6B /* SceneDelegate.swift */; };
-		D4FABD9F277EEB3400415E6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FABD9E277EEB3400415E6B /* ViewController.swift */; };
 		D4FABDA2277EEB3400415E6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4FABDA0277EEB3400415E6B /* Main.storyboard */; };
 		D4FABDA4277EEB3600415E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4FABDA3277EEB3600415E6B /* Assets.xcassets */; };
 		D4FABDA7277EEB3600415E6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4FABDA5277EEB3600415E6B /* LaunchScreen.storyboard */; };
 		D4FABDAF277EEC2000415E6B /* name.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FABDAE277EEC2000415E6B /* name.swift */; };
-		D4FABDB3277EF36100415E6B /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FABDB2277EF36100415E6B /* SecondScreenViewController.swift */; };
 		D4FABDB5277F5C7100415E6B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FABDB4277F5C7100415E6B /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,16 +24,15 @@
 		D49915C8277F65F20022F62C /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		D49915CA277F800B0022F62C /* EnterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterScreenViewController.swift; sourceTree = "<group>"; };
 		D49915CC277F83C10022F62C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		D4D1C6DC27873AEC008725B5 /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
 		D4FABD97277EEB3400415E6B /* LoginMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4FABD9A277EEB3400415E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4FABD9C277EEB3400415E6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D4FABD9E277EEB3400415E6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D4FABDA1277EEB3400415E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4FABDA3277EEB3600415E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4FABDA6277EEB3600415E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4FABDA8277EEB3600415E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4FABDAE277EEC2000415E6B /* name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = name.swift; sourceTree = "<group>"; };
-		D4FABDB2277EF36100415E6B /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
 		D4FABDB4277F5C7100415E6B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,13 +68,12 @@
 			children = (
 				D4FABD9A277EEB3400415E6B /* AppDelegate.swift */,
 				D4FABD9C277EEB3400415E6B /* SceneDelegate.swift */,
-				D4FABD9E277EEB3400415E6B /* ViewController.swift */,
 				D4FABDA0277EEB3400415E6B /* Main.storyboard */,
+				D4D1C6DC27873AEC008725B5 /* CreditViewController.swift */,
 				D49915CC277F83C10022F62C /* WelcomeViewController.swift */,
 				D49915CA277F800B0022F62C /* EnterScreenViewController.swift */,
 				D49915C8277F65F20022F62C /* RegistrationViewController.swift */,
 				D4FABDB4277F5C7100415E6B /* MainViewController.swift */,
-				D4FABDB2277EF36100415E6B /* SecondScreenViewController.swift */,
 				D4FABDAE277EEC2000415E6B /* name.swift */,
 				D4FABDA3277EEB3600415E6B /* Assets.xcassets */,
 				D4FABDA5277EEB3600415E6B /* LaunchScreen.storyboard */,
@@ -157,14 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D49915CD277F83C10022F62C /* WelcomeViewController.swift in Sources */,
-				D4FABD9F277EEB3400415E6B /* ViewController.swift in Sources */,
-				D4FABDB3277EF36100415E6B /* SecondScreenViewController.swift in Sources */,
 				D4FABD9B277EEB3400415E6B /* AppDelegate.swift in Sources */,
 				D4FABDB5277F5C7100415E6B /* MainViewController.swift in Sources */,
 				D49915C9277F65F20022F62C /* RegistrationViewController.swift in Sources */,
 				D4FABDAF277EEC2000415E6B /* name.swift in Sources */,
 				D4FABD9D277EEB3400415E6B /* SceneDelegate.swift in Sources */,
 				D49915CB277F800B0022F62C /* EnterScreenViewController.swift in Sources */,
+				D4D1C6DD27873AEC008725B5 /* CreditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +315,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -347,6 +344,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
