@@ -58,7 +58,7 @@ class RegistrationViewController: UIViewController {
         
         for person in ArrayPerson.shared.array {
             if person.login == login.text {
-                let allertController = UIAlertController(title: "Нельзя", message: "Такой пользователь уже есть", preferredStyle: .alert)
+                let allertController = UIAlertController(title: "ПРИВЕТ!", message: "АЛИНА!;)", preferredStyle: .alert)
                                 let action = UIAlertAction(title: "Cancel", style: .cancel) { action in
                                 }
                                 allertController.addAction(action)
@@ -68,7 +68,7 @@ class RegistrationViewController: UIViewController {
             }}
             
             if surname.text == "" || name.text == "" || fatherName.text == "" || login.text == "" || password.text == "" {
-                let allertController = UIAlertController(title: "Нельзя", message: "Заполни все поля", preferredStyle: .alert)
+                let allertController = UIAlertController(title: "ПРИВЕТ", message: "АЛИНА", preferredStyle: .alert)
                                 let action = UIAlertAction(title: "Cancel", style: .cancel) { action in
                                 }
                                 allertController.addAction(action)
@@ -76,7 +76,7 @@ class RegistrationViewController: UIViewController {
                 return
             }
             ArrayPerson.shared.array.append(namae)
-        let allertController = UIAlertController(title: "Success", message: String(ArrayPerson.shared.array.count), preferredStyle: .alert)
+        let allertController = UIAlertController(title: "ПРИВЕТ", message: "АЛИНА!", preferredStyle: .alert)
                         let action = UIAlertAction(title: "Cancel", style: .default) { action in
                         }
                         allertController.addAction(action)
