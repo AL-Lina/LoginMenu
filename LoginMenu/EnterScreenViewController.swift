@@ -63,7 +63,7 @@ class EnterScreenViewController: UIViewController {
             
         }
         if ok {
-            hello = fullname
+            hello = "HOW ARE U?"
         } else {
             let allertController = UIAlertController(title: "Нельзя", message: "НЕТ", preferredStyle: .alert)
                                 let action = UIAlertAction(title: "Cancel", style: .cancel) { action in
